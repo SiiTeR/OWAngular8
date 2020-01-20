@@ -19,7 +19,7 @@
         </tr>
         <tr *ngIf="correo.responder">
             <!-- El correo entre comillas es el que coge el ngFor -->
-            <app-nuevo-correo [correo]="correo"></app-nuevo-correo>
+            <app-nuevo-correo [correo]="correo" (accionRealizada)="accionRespuestaRapida(correo)"></app-nuevo-correo>
         </tr>
     </ng-container>
 </table>
